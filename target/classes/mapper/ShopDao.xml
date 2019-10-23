@@ -9,7 +9,7 @@
 		shop_name,shop_desc,shop_addr,phone,shop_img,
 		create_time,enable_status,advice)
 		VALUES
-		(#{ownerId},#{area.areaId},#{shopCategory.shopCategoryId},
+		(#{owner.userId},#{area.areaId},#{shopCategory.shopCategoryId},
 		#{shopName},#{shopDesc},#{shopAddr},#{phone},#{shopImg},
 		#{createTime},#{enableStatus},#{advice})
 	</insert>
