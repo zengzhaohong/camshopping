@@ -1,0 +1,7 @@
+2019-10-22 13:06:38:493 [main] DEBUG com.speeder.camshopping.LogTest -DEBUG TEST
+2019-10-22 13:06:38:540 [main] INFO  com.speeder.camshopping.LogTest -info test
+2019-10-22 13:06:38:555 [main] ERROR com.speeder.camshopping.LogTest -ERROR TEST
+2019-10-22 13:13:00:534 [main] DEBUG com.speeder.camshopping.LogTest -DEBUG TEST
+2019-10-22 13:13:58:835 [main] DEBUG com.speeder.camshopping.LogTest -DEBUG TEST
+2019-10-22 13:15:13:112 [main] DEBUG com.speeder.camshopping.LogTest -DEBUG TEST
+2019-10-22 13:16:15:675 [main] DEBUG com.speeder.camshopping.LogTest -DEBUG TEST
