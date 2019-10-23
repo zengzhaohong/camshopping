@@ -4,6 +4,7 @@ import java.util.Date;
 
 public class Shop {
 	private Long shopId;
+	//private Long ownerId;
 	private String shopName;
 	//店铺描述
 	private String shopDesc;
@@ -18,6 +19,11 @@ public class Shop {
 	private Integer enableStatus;
 	//超级管理员给店家的提醒
 	private String advice;
+	
+
+	//private Long shopCategoryId;
+
+	
 	private Area area;
 	private PersonInfo owner;
 	private ShopCategory shopCategory;
