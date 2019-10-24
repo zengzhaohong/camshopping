@@ -18,16 +18,16 @@ public class ShopDaoTest extends BaseTest {
 	private ShopDao shopDao;
 
 	@Test
-	public void testInsertShop() {
+	public void testInsertShop() throws Exception {
 		Shop shop = new Shop();
 		Area area = new Area();
 		PersonInfo owner = new PersonInfo();
 		ShopCategory shopCategory = new ShopCategory();
 		owner.setUserId(1L);
-		shop.setOwner(owner);
 		area.setAreaId(2);
-		shop.setArea(area);
 		shopCategory.setShopCategoryId(1L);
+		shop.setOwner(owner);
+		shop.setArea(area);
 		shop.setShopCategory(shopCategory);
 		shop.setShopName("≤‚ ‘");
 		shop.setShopDesc("test");
@@ -38,8 +38,10 @@ public class ShopDaoTest extends BaseTest {
 		shop.setAdvice("…Û∫À÷–");
 		shop.setEnableStatus(0);
 		int effectedNum = shopDao.insertShop(shop);
-		assertEquals(1,effectedNum);
-		
+		assertEquals(1, effectedNum);
+		// System.out.println(area.areaId);
+
+		// System.out.println(owner.userId);
 	}
 
 }

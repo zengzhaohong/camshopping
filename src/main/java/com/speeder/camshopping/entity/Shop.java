@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class Shop {
 	private Long shopId;
-	private Long ownerId;
+	//private Long ownerId;
 	private String shopName;
 	//店铺描述
 	private String shopDesc;
@@ -21,8 +21,8 @@ public class Shop {
 	//超级管理员给店家的提醒
 	private String advice;
 	
-	private Integer areaId;
-	private Long shopCategoryId;
+	//private Integer areaId;
+	//private Long shopCategoryId;
 
 	
 	private Area area;
@@ -34,12 +34,7 @@ public class Shop {
 	public void setShopId(Long shopId) {
 		this.shopId = shopId;
 	}
-	public Long getOwnerId() {
-		return ownerId;
-	}
-	public void setOwnerId(Long ownerId) {
-		this.ownerId = ownerId;
-	}
+
 	public String getShopName() {
 		return shopName;
 	}
@@ -100,17 +95,19 @@ public class Shop {
 	public void setAdvice(String advice) {
 		this.advice = advice;
 	}
-	public Area getArea() {
-		return area;
-	}
-	public void setArea(Area area) {
-		this.area = area;
-	}
+
 	public PersonInfo getOwner() {
 		return owner;
 	}
 	public void setOwner(PersonInfo owner) {
 		this.owner = owner;
+	}
+	
+	public Area getArea() {
+		return area;
+	}
+	public void setArea(Area area) {
+		this.area = area;
 	}
 	public ShopCategory getShopCategory() {
 		return shopCategory;
@@ -119,18 +116,6 @@ public class Shop {
 		this.shopCategory = shopCategory;
 	}
 	
-	public Integer getAreaId() {
-		return areaId;
-	}
-	public void setAreaId(Integer areaId) {
-		this.areaId = areaId;
-	}
-	public Long getShopCategoryId() {
-		return shopCategoryId;
-	}
-	public void setShopCategoryId(Long shopCategoryId) {
-		this.shopCategoryId = shopCategoryId;
-	}
 	@Override
 	public String toString() {
 		return "Shop [shopId=" + shopId + ", shopName=" + shopName + "]";
