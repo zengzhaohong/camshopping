@@ -4,6 +4,7 @@ import static org.junit.Assert.assertEquals;
 
 import java.util.Date;
 
+import org.junit.Ignore;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -18,6 +19,8 @@ public class ShopDaoTest extends BaseTest {
 	private ShopDao shopDao;
 
 	@Test
+	//Ignore标签忽略被标记的部分
+	@Ignore
 	public void testInsertShop() throws Exception {
 		Shop shop = new Shop();
 		Area area = new Area();
@@ -44,4 +47,15 @@ public class ShopDaoTest extends BaseTest {
 		// System.out.println(owner.userId);
 	}
 
+	@Test
+	public void updateShop() throws Exception{
+		Shop shop = new Shop();
+		shop.setShopId(14L);
+		shop.setShopDesc("测试商店描述");
+		shop.setShopName("咖啡");
+		shop.setLastEditTime(new Date());
+		int effecteNum = shopDao.updateShop(shop);
+		assertEquals(1,effecteNum);
+		
+	}
 }

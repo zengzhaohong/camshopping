@@ -20,9 +20,10 @@
 	</classpathentry>
 	<classpathentry kind="src" path="src/main/resources/spring"/>
 	<classpathentry kind="src" path="src/main/resources/mapper"/>
-	<classpathentry kind="src" output="target/test-classes" path="src/test/resources">
+	<classpathentry excluding="**" kind="src" output="target/test-classes" path="src/test/resources">
 		<attributes>
 			<attribute name="test" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
