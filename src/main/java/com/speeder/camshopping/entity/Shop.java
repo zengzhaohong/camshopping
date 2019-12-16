@@ -21,8 +21,8 @@ public class Shop {
 	//超级管理员给店家的提醒
 	private String advice;
 	
-	//private Integer areaId;
-	//private Long shopCategoryId;
+	private Integer areaId;
+	private Long shopCategoryId;
 
 	
 	private Area area;
@@ -30,6 +30,18 @@ public class Shop {
 	private ShopCategory shopCategory;
 	private ShopCategory parentCategory;
 	
+	public Integer getAreaId() {
+		return areaId;
+	}
+	public void setAreaId(Integer areaId) {
+		this.areaId = areaId;
+	}
+	public Long getShopCategoryId() {
+		return shopCategoryId;
+	}
+	public void setShopCategoryId(Long shopCategoryId) {
+		this.shopCategoryId = shopCategoryId;
+	}
 	public ShopCategory getParentCategory() {
 		return parentCategory;
 	}

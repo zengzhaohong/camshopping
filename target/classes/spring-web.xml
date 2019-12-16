@@ -20,7 +20,7 @@
 	<mvc:resources mapping="/resources/**" location="/resources/" />
 	<mvc:default-servlet-handler />
 
-	<!-- 3.定义视图解析器 -->
+	<!-- 3.定义视图解析器 :给请求路径加/WEB-INF/html/**.html-->
 	<bean id="viewResolver"
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix" value="/WEB-INF/html/"></property>
